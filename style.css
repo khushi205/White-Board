@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.toolbar {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+button {
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px gray;
+}
+button:hover{
+    box-shadow: 3px 3px 6px gray;
+}
+
+input[type="color"] {
+    padding: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 70px;
+    box-shadow: 1px 1px 3px gray;
+
+}
+input:hover{
+    box-shadow: 3px 3px 6px gray;
+
+}
+canvas {
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: crosshair;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 3px 3px 6px gray,
+    -3px -3px  6px gray;
+}
+
+.wrapper{
+    height: 15vh;
+    display: grid;
+    place-items: center;
+}
+.typing-demo{
+    width: 10ch;
+    animation: typing 3s steps(10),
+blink .3s step-end
+infinite alternate;
+white-space: nowrap;
+overflow:hidden;
+border-right: 3px solid;
+/* font-family: monospace; */
+font-size: 4em;
+/* color: darkslateblue; */
+color: #000;
+}
+@keyframes typing{
+    from{width: 0}
+   
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+

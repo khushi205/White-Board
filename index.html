@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+        <div class="wrapper">
+    <div class="typing-demo">
+        WhiteBoard
+    </div>
+        </div>
+        
+    <!-- <h1>Whiteboard</h1> -->
+    <div class="toolbar"><b>Tools :</b>
+        <button id="pen">Pen <i class="fa-solid fa-pen "></i></button>
+        <button id="marker">Marker <i class="fa-solid fa-marker"></i></button>
+        <button id="highlighter">Highlighter <i class="fa-solid fa-highlighter"></i></button>
+        <button id="eraser">Eraser <i class="fa-solid fa-eraser"></i></button>
+        <label for="colorPicker"><i class="fa-solid fa-palette"></i></label>
+        <input type="color" id="colorPicker" value="#000000">
+        <button id="clear">Clear All <i class="fa-solid fa-broom"></i></button>
+    </div>
+    
+    <canvas id="whiteboard"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
